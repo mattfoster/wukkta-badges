@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyuku Boupos Presents: Wukka 2023 Badge</title>
+    <style>
+        body { font-family: monospace; }
+        .logo, .images { margin-top: 20px; text-align: center; }
+        .instructions, .images, .bom { 
+            margin-top: 40px; 
+            width: 50%; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <!-- Logo Image -->
+        <img width="20%" src="octo.svg" alt="Boyouku Boupos">
+        <h1>Boyuku presents<br>
+        Wukkta 2023 Badge</h1>
+    </div>
+
+    <div class="images">
+        <img width="80%" src="overview.png" alt="Overview">
+    </div>
+
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <p>Refer to numbers in diagram above.</p>
+        <ol start="-1">
+            <li>Look at the board and bask in its glory.</li>
+            <li>Write your name in the white box. This side is the front of the badge, flip it over.</li>
+            <li>
+                Start by soldering the resistors: push them through from the back and solder them on the front.
+                <ul>
+                    <li><code>R1</code>, <code>R2</code>, <code>R5</code> and <code>R6</code> are identical (330 &ohm;). These limit current through the LEDs.</li>
+                    <li><code>R3</code> and <code>R4</code> (5.6 k&ohm;) are also identical. These set the current used to switch on the transistors and also the period of the flash (in combination with the capacitors).</li>
+                    <li>Snip the legs close to the board when you're happy.</li>
+                </ul>
+            </li>
+            <li>Next, find the 1&micro;F capacitors. These are black cylinders with a white stripe. 
+                <ul>
+                    <li>The white stripes should face the left. Bend the legs 90&deg; so that they can sit flat against the back of the board.</li>
+                    <li>Push the legs through the hole and solder them from the front.</li>
+                    <li>Snip the legs close to the board when you're happy.</li>
+                </ul>
+            </li>
+            <li>
+                Now it's time for the battery casing. To solder this:
+                <ul>
+                    <li>Tin the square pads on either side of the big round pad. To do this, hold the iron to a pad and add solder until there's a thin layer.</li>
+                    <li>Place the casing over the pads (with the for the batter facing the bottom) and touch the iron again the parts above the tinned pads, add some solder.</li>
+                    <li>Flip the board over.</li>
+                </ul>
+            </li>
+            <li>
+                Panic: it's time for the hardest bit: transistors. These switch the LEDs on and off.
+                <ul>
+                    <li>
+                        Find the two transistors and push them through the front of the board so they are oriented flat-side up.
+                    </li>
+                    <li>
+                        Flip the board over and carefully solder each pin. These are really close together (sorry!) so think about using fine solder or get help.
+                    </li>
+                    <li>
+                        You could also flood the area with solder and then use a sucker to remove the excess. They key is that there must not be an electrical connection between any of the pins.
+                    </li>
+                    <li>
+                        When you're done, chop the legs off close to the board. The closer the better, but the capacitors should hold the board off your clothes a bit (that's the plan anyway!).
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Find the LEDs, you are nearly done!
+                <ul>
+                    <li>Push the LEDs through from the front with the flat faces facing outwards.</li>
+                    <li>Flip the board and solder the legs.</li>
+                    <li>Snip them close to the board as before.</li>
+                </ul>
+            </li>
+            <li>
+                Construction is done! Check everything looks good and then slide the battery into the bottom of the casing. Boom.
+            </li>
+            
+        </ol>
+    </div>
+
+    <div class="instructions">
+        <h2>Circuit</h2>
+        <p>The badge uses a simple <a href="https://en.wikipedia.org/wiki/Multivibrator">Astable Multivibrator</a> to flash the LEDs.</p>
+        <img src="circuit.png" alt="Circuit diagram">
+        <p>For an interactive BOM, see <a href="ibom.html">ibom</a>.</p>
+    </div>
+
+</body>
+</html>
